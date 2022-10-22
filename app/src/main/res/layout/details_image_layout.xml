@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/detailsImageIV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_left"
+                app:layout_constraintBottom_toBottomOf="@+id/detailsImageIV"
+                app:layout_constraintEnd_toStartOf="@+id/detailsImageIV"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/detailsImageIV" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_right"
+                app:layout_constraintBottom_toBottomOf="@+id/detailsImageIV"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/detailsImageIV"
+                app:layout_constraintTop_toTopOf="@+id/detailsImageIV" />
+
+            <TextView
+                android:id="@+id/titleHeadingTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Title : "
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/detailsImageIV"
+                app:layout_constraintTop_toTopOf="@id/detailsImageIV" />
+
+            <TextView
+                android:id="@+id/titleTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Title jhbhbvhbrwkvhb vwkjrbvkjrbvkrv vkrjbvkjrvb hjbrkvjbv vkhbrvkjb vrbvkj"
+                android:textSize="18sp"
+                android:textColor="@color/white_opac"
+                android:maxLines="4"
+                app:layout_constraintEnd_toEndOf="@id/detailsImageIV"
+                app:layout_constraintStart_toEndOf="@id/titleHeadingTV"
+                app:layout_constraintTop_toTopOf="@id/titleHeadingTV"
+                app:layout_constraintBottom_toBottomOf="@id/titleHeadingTV"/>
+
+
+            <TextView
+                android:id="@+id/descHeadingTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Description : "
+                android:textSize="22sp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/titleHeadingTV"
+                app:layout_constraintTop_toBottomOf="@id/titleTV" />
+
+            <TextView
+                android:id="@+id/descTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=" Description kdjvbkjvb vkejhbvkjvb vkjvbkrjv vkjbvkjbv vkrnbvkj"
+                android:textSize="18sp"
+                android:textColor="@color/white_opac"
+                android:maxLines="20"
+                app:layout_constraintEnd_toEndOf="@id/detailsImageIV"
+                app:layout_constraintStart_toEndOf="@id/descHeadingTV"
+                app:layout_constraintTop_toTopOf="@+id/descHeadingTV" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
